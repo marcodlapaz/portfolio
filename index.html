@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@200;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Custom JS -->
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/button.js"></script>
+    <script defer src="./js/form.js"></script>
+  </head>
+  <body>
+    <!-- ========= Header ========= -->
+    <header class="header">
+      <nav id="nav" class="header__nav">
+        <a href="#inicio" class="header__logo">MARCO</a>
+
+        <ul class="header__links">
+          <li class="header__li">
+            <a href="#inicio" class="header__link"> INICIO </a>
+          </li>
+          <li class="header__li">
+            <a href="#sobremi" class="header__link"> SOBRE MI </a>
+          </li>
+          <li class="header__li">
+            <a href="#skills" class="header__link"> SKILLS </a>
+          </li>
+          <li class="header__li">
+            <a href="#curriculum" class="header__link"> CURRICULUM </a>
+          </li>
+          <li class="header__li">
+            <a href="#portfolio" class="header__link"> PORTFOLIO </a>
+          </li>
+          <li class="header__li">
+            <a href="#contacto" class="header__link"> CONTACTO </a>
+          </li>
+        </ul>
+
+        <div class="header__responsive">
+          <i class="fa-solid fa-bars bar"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ========= Inicio ========= -->
+    <section class="inicio" id="inicio">
+      <div class="inicio__banner">
+        <img
+          src="./assets/images/hero.png"
+          alt="Banner del portfolio"
+          class="inicio__img"
+        />
+
+        <h1 class="inicio__h1">Marco Valencia</h1>
+
+        <h2 class="inicio__h2">DESARROLLADOR FRONTEND</h2>
+
+        <div class="inicio__redes">
+          <a
+            href="https://github.com/marcodlapaz"
+            target="_blank"
+            class="inicio__red"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/marcodlapaz/"
+            target="_blank"
+            class="inicio__red"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a
+            href="https://www.facebook.com/marcodlap4z/"
+            target="_blank"
+            class="inicio__red"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a
+            href="https://twitter.com/marcodlapaz"
+            target="_blank"
+            class="inicio__red"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= Sobre mí ========= -->
+    <section class="sobremi" id="sobremi">
+      <div class="sobremi__contenedor">
+        <h2 class="sobremi__h2">SOBRE MÍ</h2>
+
+        <p class="sobremi__p">
+          Hola,<span class="sobremi__span"> soy Marco</span> Lorem ipsum dolor
+          sit, amet consectetur adipisicing elit. Dolorum accusamus tempore
+          architecto nesciunt consequuntur a, dolores culpa incidunt adipisci
+          corporis quidem commodi, itaque rem cupiditate ipsam quam aspernatur
+          ipsa. Eum?
+        </p>
+
+        <div class="sobremi__fila">
+          <!-- ========= Columna datos personales ========= -->
+          <div class="sobremi__col">
+            <h3 class="sobremi__h3">Datos personales</h3>
+
+            <ul class="sobremi__datos">
+              <li class="sobremi__dato">
+                <strong class="sobremi__strong">Teléfono </strong>+591 67135599
+              </li>
+              <li class="sobremi__dato">
+                <strong class="sobremi__strong">Email </strong
+                >marcovalencia.dev@gmail.com
+              </li>
+              <li class="sobremi__dato">
+                <strong class="sobremi__strong">GitHub </strong>github.com/marcodlapaz
+              </li>
+              <li class="sobremi__dato">
+                <strong class="sobremi__strong">Área </strong>
+                <span class="sobremi__area">Desarrollo Frontend</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ========= Columna intereses ========= -->
+          <div class="sobremi__col">
+            <h3 class="intereses__h3">Intereses</h3>
+
+            <div class="intereses__contenedor">
+              <div class="intereses__interes">
+                <i class="fa-solid fa-gamepad intereses__icon"></i>
+                <p class="intereses__p">Juegos</p>
+              </div>
+
+              <div class="intereses__interes">
+                <i class="fa-solid fa-headphones intereses__icon"></i>
+                <p class="intereses__p">Música</p>
+              </div>
+
+              <div class="intereses__interes">
+                <i class="fa-solid fa-plane intereses__icon"></i>
+                <p class="intereses__p">Viajar</p>
+              </div>
+
+              <div class="intereses__interes">
+                <i class="fa-brands fa-windows intereses__icon"></i>
+                <p class="intereses__p">Windows</p>
+              </div>
+
+              <div class="intereses__interes">
+                <i class="fa-solid fa-heart-pulse intereses__icon"></i>
+                <p class="intereses__p">Deporte</p>
+              </div>
+
+              <div class="intereses__interes">
+                <i class="fa-solid fa-book intereses__icon"></i>
+                <p class="intereses__p">Libros</p>
+              </div>
+
+              <div class="intereses__interes">
+                <i class="fa-solid fa-film intereses__icon"></i>
+                <p class="intereses__p">Películas</p>
+              </div>
+
+              <div class="intereses__interes">
+                <i class="fa-solid fa-camera intereses__icon"></i>
+                <p class="intereses__p">Fotos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ========= Descargar CV ========= -->
+        <a
+          href="./assets/pdf/Marco A. Valencia CV.pdf"
+          download="Marco A. Valencia CV.pdf"
+          class="sobremi__a"
+        >
+          <button class="sobremi__button">
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="sobremi__overlay"></span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========= Skills ========= -->
+    <section class="skills" id="skills">
+      <div class="skills__contenedor">
+        <h2 class="skills__h2">Skills</h2>
+
+        <div class="skills__grid">
+          <div class="skills__skill">
+            <i class="fa-brands fa-html5 skills__icon"></i>
+            <h3 class="skills__h3">HTML</h3>
+            <p class="skills__p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+              provident.
+            </p>
+          </div>
+
+          <div class="skills__skill">
+            <i class="fa-brands fa-css3-alt skills__icon"></i>
+            <h3 class="skills__h3">CSS</h3>
+            <p class="skills__p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+              provident.
+            </p>
+          </div>
+
+          <div class="skills__skill">
+            <i class="fa-brands fa-square-js skills__icon"></i>
+            <h3 class="skills__h3">JavaScript</h3>
+            <p class="skills__p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+              provident.
+            </p>
+          </div>
+
+          <div class="skills__skill">
+            <i class="fa-brands fa-github skills__icon"></i>
+            <h3 class="skills__h3">GitHub</h3>
+            <p class="skills__p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+              provident.
+            </p>
+          </div>
+
+          <div class="skills__skill">
+            <i class="fa-brands fa-react skills__icon"></i>
+            <h3 class="skills__h3">React</h3>
+            <p class="skills__p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+              provident.
+            </p>
+          </div>
+
+          <div class="skills__skill">
+            <i class="fa-brands fa-figma skills__icon"></i>
+            <h3 class="skills__h3">Figma</h3>
+            <p class="skills__p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+              provident.
+            </p>
+          </div>
+
+          <div class="skills__skill">
+            <i class="fa-brands fa-node skills__icon"></i>
+            <h3 class="skills__h3">Node JS</h3>
+            <p class="skills__p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+              provident.
+            </p>
+          </div>
+
+          <div class="skills__skill">
+            <i class="fa-brands fa-linux skills__icon"></i>
+            <h3 class="skills__h3">Linux</h3>
+            <p class="skills__p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+              provident.
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="skills__grid">
+          <div class="skills__box">
+            <div class="skills__title">
+              <div class="skills__img">
+                <i class="fa-brands fa-html5 skills__icon"></i>
+              </div>
+
+              <h3 class="skills__h3">HTML</h3>
+            </div>
+
+            <p class="skills__p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              sint dignissimos, odit nobis corporis inventore?
+            </p>
+          </div>
+
+          <div class="skills__box">
+            <div class="skills__title">
+              <div class="skills__img">
+                <i class="fa-brands fa-css3-alt skills__icon"></i>
+              </div>
+
+              <h3 class="skills__h3">HTML</h3>
+            </div>
+
+            <p class="skills__p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              sint dignissimos, odit nobis corporis inventore?
+            </p>
+          </div>
+
+          <div class="skills__box">
+            <div class="skills__title">
+              <div class="skills__img">
+                <i class="fa-brands fa-square-js skills__icon"></i>
+              </div>
+
+              <h3 class="skills__h3">HTML</h3>
+            </div>
+
+            <p class="skills__p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              sint dignissimos, odit nobis corporis inventore?
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- ========= Curriculum ========= -->
+    <section class="curriculum" id="curriculum">
+      <div class="curriculum__contenedor">
+        <h2 class="curriculum__h2">CURRICULUM</h2>
+
+        <div class="curriculum__fila">
+          <!-- ========= Columna izquierda ========= -->
+          <div class="curriculum__izq">
+            <h3 class="curriculum__h3">Educación</h3>
+            <!-- ========= Estudio 1 ========= -->
+            <div class="curriculum__estudio">
+              <h4 class="curriculum__h4">Licenciatura en Informática</h4>
+
+              <span class="curriculum__span"
+                >Universidad Mayor de San Andrés</span
+              >
+
+              <p class="curriculum__p">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Similique fugit quos voluptatum voluptatibus, molestias officia
+                repudiandae aspernatur, et animi optio dignissimos possimus
+                accusamus eos aut quasi harum beatae corporis aliquam?
+              </p>
+
+              <div class="curriculum__conectori">
+                <div class="curriculum__circuloi"></div>
+              </div>
+            </div>
+            <!-- ========= Estudio 2 ========= -->
+            <div class="curriculum__estudio">
+              <h4 class="curriculum__h4">Tecnicatura en Pedagogía</h4>
+
+              <span class="curriculum__span">Instituto Kanban</span>
+
+              <p class="curriculum__p">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Similique fugit quos voluptatum voluptatibus, molestias officia
+                repudiandae aspernatur, et animi optio dignissimos possimus
+                accusamus eos aut quasi harum beatae corporis aliquam?
+              </p>
+
+              <div class="curriculum__conectori">
+                <div class="curriculum__circuloi"></div>
+              </div>
+            </div>
+            <!-- ========= Estudio 3 ========= -->
+            <div class="curriculum__estudio">
+              <h4 class="curriculum__h4">Tecnicatura en Diseño Gráfico</h4>
+
+              <span class="curriculum__span">INFOCAL</span>
+
+              <p class="curriculum__p">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Similique fugit quos voluptatum voluptatibus, molestias officia
+                repudiandae aspernatur, et animi optio dignissimos possimus
+                accusamus eos aut quasi harum beatae corporis aliquam?
+              </p>
+
+              <div class="curriculum__conectori">
+                <div class="curriculum__circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========= Columna derecha ========= -->
+          <div class="curriculum__der">
+            <h3 class="curriculum__h3">Experiencia de trabajo</h3>
+
+            <!-- ========= Trabajo 1 ========= -->
+            <div class="curriculum__trabajo">
+              <h4 class="curriculum__h4">Consultor de Diseño Gráfico</h4>
+
+              <span class="curriculum__span">Servicios COPABOL S. A.</span>
+
+              <p class="curriculum__p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                obcaecati cupiditate molestiae, a recusandae dolorum reiciendis
+                fugiat assumenda autem cumque consectetur quam tempore
+                architecto ipsam minus illo distinctio praesentium debitis.
+              </p>
+
+              <div class="curriculum__conectord">
+                <div class="curriculum__circulod"></div>
+              </div>
+            </div>
+
+            <!-- ========= Trabajo 2 ========= -->
+            <div class="curriculum__trabajo">
+              <h4 class="curriculum__h4">Profesor auxiliar de informática</h4>
+
+              <span class="curriculum__span"
+                >Universidad Mayor de San Andrés
+              </span>
+
+              <p class="curriculum__p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                obcaecati cupiditate molestiae, a recusandae dolorum reiciendis
+                fugiat assumenda autem cumque consectetur quam tempore
+                architecto ipsam minus illo distinctio praesentium debitis.
+              </p>
+
+              <div class="curriculum__conectord">
+                <div class="curriculum__circulod"></div>
+              </div>
+            </div>
+
+            <!-- ========= Trabajo 3 ========= -->
+            <div class="curriculum__trabajo">
+              <h4 class="curriculum__h4">Profesor auxiliar de informática</h4>
+
+              <span class="curriculum__span"
+                >Universidad Mayor de San Andrés
+              </span>
+
+              <p class="curriculum__p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                obcaecati cupiditate molestiae, a recusandae dolorum reiciendis
+                fugiat assumenda autem cumque consectetur quam tempore
+                architecto ipsam minus illo distinctio praesentium debitis.
+              </p>
+
+              <div class="curriculum__conectord">
+                <div class="curriculum__circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= Portfolio ========= -->
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__contenedor">
+        <h2 class="portfolio__h2">PORTFOLIO</h2>
+
+        <div class="portfolio__galeria">
+          <!-- ========= Proyecto #1 ========= -->
+          <div class="portfolio__proyecto">
+            <img
+              src="./assets/images/p1.jpg"
+              alt="Miniatura del proyecto"
+              class="proyecto__img"
+            />
+
+            <div class="portfolio__overlay">
+              <h3 class="portfolio__h3">Diseño creativo</h3>
+
+              <p class="portfolio__p">Proyecto</p>
+            </div>
+          </div>
+          <!-- ========= Proyecto #2 ========= -->
+          <div class="portfolio__proyecto">
+            <img
+              src="./assets/images/p2.jpg"
+              alt="Miniatura del proyecto"
+              class="proyecto__img"
+            />
+
+            <div class="portfolio__overlay">
+              <h3 class="portfolio__h3">Diseño creativo</h3>
+
+              <p class="portfolio__p">Proyecto</p>
+            </div>
+          </div>
+          <!-- ========= Proyecto #3 ========= -->
+          <div class="portfolio__proyecto">
+            <img
+              src="./assets/images/p3.jpg"
+              alt="Miniatura del proyecto"
+              class="proyecto__img"
+            />
+
+            <div class="portfolio__overlay">
+              <h3 class="portfolio__h3">Diseño creativo</h3>
+
+              <p class="portfolio__p">Proyecto</p>
+            </div>
+          </div>
+          <!-- ========= Proyecto #4 ========= -->
+          <div class="portfolio__proyecto">
+            <img
+              src="./assets/images/p4.jpg"
+              alt="Miniatura del proyecto"
+              class="proyecto__img"
+            />
+
+            <div class="portfolio__overlay">
+              <h3 class="portfolio__h3">Diseño creativo</h3>
+
+              <p class="portfolio__p">Proyecto</p>
+            </div>
+          </div>
+          <!-- ========= Proyecto #5 ========= -->
+          <div class="portfolio__proyecto">
+            <img
+              src="./assets/images/p5.jpg"
+              alt="Miniatura del proyecto"
+              class="proyecto__img"
+            />
+
+            <div class="portfolio__overlay">
+              <h3 class="portfolio__h3">Diseño creativo</h3>
+
+              <p class="portfolio__p">Proyecto</p>
+            </div>
+          </div>
+          <!-- ========= Proyecto #6 ========= -->
+          <div class="portfolio__proyecto">
+            <img
+              src="./assets/images/p6.jpg"
+              alt="Miniatura del proyecto"
+              class="proyecto__img"
+            />
+
+            <div class="portfolio__overlay">
+              <h3 class="portfolio__h3">Diseño creativo</h3>
+
+              <p class="portfolio__p">Proyecto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= Contacto ========= -->
+    <section class="contacto" id="contacto">
+      <div class="contacto__contenedor">
+        <h2 class="contacto__h2">CONTACTO</h2>
+
+        <div class="contacto__fila">
+          <div class="contacto__col">
+            <form id="form" action="" class="form">
+              <input
+                type="text"
+                placeholder="Nombre"
+                class="contacto__input"
+                name="nombre"
+                id="nombre"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="Teléfono"
+                class="contacto__input"
+                name="telefono"
+                id="telefono"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="contacto__input"
+                name="email"
+                id="email"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Asunto"
+                class="contacto__input"
+                name="asunto"
+                id="asunto"
+              />
+              <textarea
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+                class="contacto__input"
+                name="mensaje"
+                id="mensaje"
+              ></textarea>
+
+              <button type="submit" class="contacto__btn">
+                Enviar <i class="fa-solid fa-paper-plane"></i>
+                <span class="contacto__overlay"></span>
+              </button>
+            </form>
+            <a href="mailto:marcovalencia.dev@gmail.com" id="trucazo">mail</a>
+          </div>
+
+          <div class="contacto__col">
+            <img
+              src="./assets/images/ubicacion.png"
+              alt="Ubicación"
+              class="contacto__img"
+            />
+
+            <div class="contacto__info">
+              <ul class="contacto__datos">
+                <li class="contacto__dato">
+                  <i class="fa-solid fa-location-dot contacto__icon"></i>
+                  La Paz, Bolivia
+                </li>
+                <li class="contacto__dato">
+                  <i
+                    class="fa-solid fa-mobile-screen-button contacto__icon"
+                  ></i>
+                  +591 67135599
+                </li>
+                <li class="contacto__dato">
+                  <i class="fa-solid fa-envelope contacto__icon"></i>
+                  marcovalencia.dev@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= Footer ========= -->
+    <footer class="footer">
+      <div class="footer__redes">
+        <a
+          href="https://github.com/marcodlapaz"
+          target="_blank"
+          class="footer__red"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/marcodlapaz/"
+          target="_blank"
+          class="footer__red"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a
+          href="https://www.facebook.com/marcodlap4z/"
+          target="_blank"
+          class="footer__red"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a
+          href="https://twitter.com/marcodlapaz"
+          target="_blank"
+          class="footer__red"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- ========= Botón ========= -->
+    <button class="btn" id="up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
